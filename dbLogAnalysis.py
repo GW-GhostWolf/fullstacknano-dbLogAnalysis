@@ -101,7 +101,7 @@ printResults(results, formatString)
 # Run High Error analysis
 results = getHighErrorDays(db)
 formatString = "{:%Y-%m-%d}{:9.2f}%"
-print(" High Error Days")
+print("High Error Days")
 print("{:<10}{:>10}".format("Date", "Error %"))
 print("{:=^20}".format(""))
 printResults(results, formatString)
