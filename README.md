@@ -16,20 +16,20 @@ The program you write in this project will run from the command line. It won't t
 ## Usage
 TLDR - Run the Vagrant VM, log in, and use python to run the dbLogAnalysis.py. 
 
-* Start the VM - this may take a few minutes
+Start the VM - this may take a few minutes
 
     vagrant up
 
-* Login to the VM
+Login to the VM
 
     vagrant ssh
 
-* Install the database with data
+Install the database with data
 
     unzip -d / /vagrant/newsdata.zip
     psql -d news -f /vagrant/newsdata.sql
 
-* Run the program using python. The program assumes the [PostgreSQL](https://www.postgresql.org/) database is running on the localhost.
+Run the program using python. The program assumes the [PostgreSQL](https://www.postgresql.org/) database is running on the localhost.
 
     python3 /vagrant/dbLogAnalysis.py
 
