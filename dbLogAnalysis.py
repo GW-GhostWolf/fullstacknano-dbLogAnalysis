@@ -78,13 +78,13 @@ def printResults(results, formatString):
     """
     for row in results:
         print(formatString.format(row[0], row[1]))
-    print
+    print("")
 
 
 # Connect to the database
 db = connect()
 # Run Popular Articles analysis
-print
+print("")
 results = getPopularArticles(db)
 formatString = "{:<40}{:>10}"
 print("Most Popular Articles (lifetime)")
