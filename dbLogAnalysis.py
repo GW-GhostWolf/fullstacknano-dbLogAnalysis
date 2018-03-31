@@ -71,7 +71,7 @@ def getHighErrorDays(dbcon):
 
 
 def printResults(results, formatString):
-    """ 
+    """
     Prints out the results using the format string
     Input results: data set to print. assumes it has 2 fields
     Input formatString: format string to use for printing
